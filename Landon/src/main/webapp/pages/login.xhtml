@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Login</title>
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+</h:head>
+<h:body styleClass="light-blue lighten-4">
+	<div class="valign-wrapper" id="login-page">
+		<div class="container">
+			<div class="center-align">
+				<div class="row">
+					<div class="col s6 offset-s3">
+						<div class="card">
+							<div class="card-content">
+								<img class="responsive-img" style="max-width: 64px;" src="https://www.nopcommerce.com/images/thumbs/0004665_400.png"/>
+								<div class="left-align">
+									<h:form id="login-form">
+										<p:growl autoUpdate="true"/>
+										<div class="row">
+											<div class="col s12 input-field">
+												<h:inputText id="username"  required="true" requiredMessage="Username is Required!"/>
+												<h:outputLabel for="username"  value="Username"/>
+											</div>
+											<div class="col s12 input-field">
+												<h:inputText id="password"  required="true" requiredMessage="Password is Required!"/>
+												<h:outputLabel for="password"  value="Password"/>
+											</div>
+											<div class="col s12 input-field">
+												<h:commandLink value="Login" styleClass="btn btn-large"/>
+											</div>
+										</div>
+									</h:form>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</h:body>
+</html>
